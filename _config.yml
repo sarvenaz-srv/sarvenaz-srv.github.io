@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "Sarvenaz Sarvghad"
+  linkedin         : "https://www.linkedin.com/in/sarvenaz-sarvghad-0376aa1b7"
   orcid            : 
   pinterest        :
   soundcloud       :
@@ -175,19 +175,19 @@ kramdown:
 
 # Collections
 collections:
+  education:
+    output: true
+    permalink: /:collection/:path/
+  experiences:
+    output: true
+    permalink: /:collection/:path/
   teaching:
     output: true
     permalink: /:collection/:path/
-  publications:
+  achivements:
     output: true
     permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
-
+  
 
 # Defaults
 defaults:
@@ -209,6 +209,24 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _education
+  - scope:
+      path: ""
+      type: education
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _experiences
+  - scope:
+      path: ""
+      type: experiences
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _teaching
   - scope:
       path: ""
@@ -218,10 +236,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _publications
+  # _projects
   - scope:
       path: ""
-      type: publications
+      type: projects
     values:
       layout: single
       author_profile: true
