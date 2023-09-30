@@ -1,7 +1,7 @@
 ---
 title: "Teaching Assistant"
 collection: teaching
-type: "Undergraduate course"
+type: "Academic Experience"
 permalink: /teaching/teaching-assistant
 venue: "Amirkabir University of Technology, Computer Engineering Department"
 date: 2020-08-01
