@@ -187,6 +187,9 @@ collections:
   achivements:
     output: true
     permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
   
 
 # Defaults
@@ -236,7 +239,7 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _projects
+  # projects
   - scope:
       path: ""
       type: projects
@@ -245,23 +248,15 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _achievements
+  # _achivements
   - scope:
       path: ""
-      type: achievements
+      type: achivements
     values:
       layout: single
       author_profile: true
       share: true
       comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 # Sass/SCSS
 sass:
